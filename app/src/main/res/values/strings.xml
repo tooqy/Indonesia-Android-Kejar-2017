@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Indonesia Android Kejar</string>
+
+    <!-- Custome String -->
+    <string name="title">Coffee Cups</string>
+    <string name="hint_name">Your Name</string>
+    <string name="title_activity_order">OrderActivity</string>
+
+    <string name="hbd_text">Happy Birthday Sist!</string>
+    <string name="from">From, Bro </string>
+    <string name="open">Open</string>
+
+
+    <string name="about">
+        Lorem ipsum dolor sit amet, ne per perfecto tractatos imperdiet, cu tale epicuri accusata ius. An simul insolens urbanitas duo. Eu iudicabit sententiae est, eam id tota sententiae accommodare. No qui homero consulatu reprimique. Eum in forensibus dissentias.
+    </string>
+</resources>
