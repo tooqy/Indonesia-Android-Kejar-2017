@@ -98,7 +98,7 @@ public class OrderActivity extends AppCompatActivity {
 
     public void onClickOrder(View view) {
         Intent emailIntent = new Intent(Intent.ACTION_SEND);
-        emailIntent.setData(Uri.parse("mailto"));
+        emailIntent.setData(Uri.parse("mailto:"+Uri.encode("mastuki@bsi.co.id")));
         emailIntent.setType("text/plain");
         emailIntent.putExtra(Intent.EXTRA_EMAIL, "mastuki07@gmail.com");
         emailIntent.putExtra(Intent.EXTRA_SUBJECT, mTextNama.getText());

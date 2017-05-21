@@ -1,28 +1,31 @@
-package com.example.android.androidkejar_2;
+package com.example.android.androidkejar_2.home;
 
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.os.Bundle;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.ListView;
 import android.widget.Toast;
 
-import com.example.android.androidkejar_2.home.HomeActivity;
+import com.example.android.androidkejar_2.AboutActivity;
+import com.example.android.androidkejar_2.OrderActivity;
+import com.example.android.androidkejar_2.R;
+import com.example.android.androidkejar_2.list_view.ListActivity;
 
-
-public class MainActivity extends AppCompatActivity {
+public class HomeActivity extends AppCompatActivity {
 
     boolean doubleBackToExitPressedOnce = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_home);
     }
 
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -53,11 +56,18 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    public void openCard(View view) {
-//        TextView scoreViewA = (TextView) findViewById(R.id.txvBday);
-//        scoreViewA.setText("Selamat Ulang Tahun ya..");
+    public void viewBuku(View view) {
+        Intent intent = new Intent(this, ListActivity.class);
+        startActivity(intent);
+    }
 
-        Intent intent = new Intent(this, OrderActivity.class);
+    public void viewJadwal(View view) {
+        Intent intent = new Intent(this, ListActivity.class);
+        startActivity(intent);
+    }
+
+    public void viewUjian(View view) {
+        Intent intent = new Intent(this, ListActivity.class);
         startActivity(intent);
     }
 
@@ -99,9 +109,5 @@ public class MainActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    public void openEducation(View view) {
-        Intent intent = new Intent(this, HomeActivity.class);
-        startActivity(intent);
-    }
 }
 

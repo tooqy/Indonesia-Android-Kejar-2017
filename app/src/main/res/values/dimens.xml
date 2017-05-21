@@ -12,4 +12,9 @@
     <dimen name="text_35">35sp</dimen>
     <dimen name="text_40">40sp</dimen>
     <dimen name="fab_margin">16dp</dimen>
+
+
+    <dimen name="small_image">100dp</dimen>
+    <dimen name="medium_image">200dp</dimen>
+    <dimen name="large_image">500dp</dimen>
 </resources>
